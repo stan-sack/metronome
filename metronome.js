@@ -59,6 +59,15 @@
     function updateBeatCounter() {
         const val  = elements.noteType.value;
         elements.beatCounter.innerText = `${(settings.timesThrough % val) + 1}`;
+
+        /**
+         * Change border color if first beat
+         */
+        if (elements.beatCounter.innerText === '1') {
+            elements.beatCounter.classList.add('first-beat');
+        } else {
+            elements.beatCounter.classList.remove('first-beat');
+        }
     }
 
     function updateToggleButtonText(shouldPlaySound) {

@@ -6,6 +6,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
+  text-align: center;
 }
 
 html {
@@ -81,6 +82,7 @@ button:hover {
 
 .time-signature {
   background: #e8e8e8;
+  width: 100%
   display: inline-block;
 }
 
@@ -93,10 +95,21 @@ button:hover {
     white-space: nowrap;
 }
 
+.counter-wrapper {
+    text-align: center;
+}
+
 .counter {
+  display: inline-block;
   background: #565656;
   color: white;
   padding: 15px;
+  width: 80px;
+  font-size: 30px;
+  border-width: medium;
+  border-style: solid;
+  border-color: black;
+  margin: 20px;
 }
 
 .hidden {
@@ -113,4 +126,8 @@ select {
     border: 1px solid;
     background: white;
     padding: 8px;
+}
+
+.first-beat {
+    border-color: red;
 }
